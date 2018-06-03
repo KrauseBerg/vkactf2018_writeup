@@ -4,7 +4,7 @@ Mr.Hacker [Web 150]
 http://185.17.120.141 (Посмотри на логин этого парня)
 
 
-
+![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/web/image01.PNG?raw=true)
 
 Переходим на сайт. Видим, что cms сайта - ```wordpress```. Так же можно узнать версию wordpress ```4.7.3```.
 Если вы читаете IT новости, то наверняка видили много статьей про уязвимости wordpress, а значит нам необходим их проэкспуатировать
@@ -42,7 +42,7 @@ http://185.17.120.141 (Посмотри на логин этого парня)
 
 ```https://ru.0day.today/exploit/23884```
 
-![alt text]
+![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/web/image02.PNG?raw=true)
 
 Читаем описание экспоита.
 Видим, что с помощью данного экспоита можно получить доступ к файла сервера.
