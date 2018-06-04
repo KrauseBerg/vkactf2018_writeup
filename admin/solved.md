@@ -136,18 +136,16 @@ ssh: логин - testuser3
 Для этого используем команду ```grep``` c флагом ```-E``` (для работы с RegExp)  
 
 Применим регулярное выражение к нашей команде:
->```grep -E '[A-Za-z]{5}[a-z0-9]{4}[0-9][M-Ym-y][0-9][a-z]{2}' data.txt```
+>```grep -E '^[A-Za-z]{5}[a-z0-9]{4}[0-9][M-Ym-y].*[0-9][a-z]{2}$' data.txt```
 
-На выходе имеем строки.  
+На выходе имеем строку.  
 
->mzHYZRqT2vx92W4mfZzB  
-VfZrxUMRktu335y2wzyg  
-vEXkmou9c30n9bxt3nCe  
+>SXTjpza8t7O6i2GQI0ch 
 
-Загоняем их в ```FLAG{...}```
+Загоняем ее в ```FLAG{...}```
 
 Наш флаг:  
->```FLAG{VfZrxUMRktu335y2wzyg}```
+>```FLAG{SXTjpza8t7O6i2GQI0ch}```
 
 
 
