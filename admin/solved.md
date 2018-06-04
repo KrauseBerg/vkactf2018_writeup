@@ -50,4 +50,71 @@ ssh: логин - testuser2
 
 Получаем на выводе:
 > ```FLAG{#hide_and_seek#}```  
-yhglnpepr{2965&86t7}f
+yhglnpepr{2965&86t7}f   
+
+
+
+Лего [Admin 40]
+=====================
+
+>host: *****.ml  
+ssh: логин - testuser4 
+пароль - testuser4  
+
+Используя исходные данные подключаемся по ```SSH```.
+
+Перед нами множество файлов, где располагается по 1 символу.  
+Прочтем все файлы с помощью команды ```cat```, а с помощью команды ```tr``` удалим при выводе перенос строк 
+
+``` cat * | tr -d '\n' ```
+
+Получаем строку следующего вида
+
+> z#}Ae_lG#zpFus___L_{
+
+Как видим, из этих символом можно собрать флаг. Вручную долго, намного проще командой (мы же все-таки программисты ;) )
+
+Отобразим информацию о файлах с помощью команды ```la -la```.
+
+На выходе получаем:
+
+>-rw-r--r--    1 root     root             2 May  2 18:55 bit0  
+-rw-r--r--    1 root     root             2 May  2 18:35 bit1  
+-rw-r--r--    1 root     root             2 May  2 19:17 bit10  
+-rw-r--r--    1 root     root             2 May  2 17:56 bit11  
+-rw-r--r--    1 root     root             2 May  2 19:05 bit12  
+-rw-r--r--    1 root     root             2 May  2 18:48 bit13  
+-rw-r--r--    1 root     root             2 May  2 19:01 bit14  
+-rw-r--r--    1 root     root             2 May  2 18:20 bit15  
+-rw-r--r--    1 root     root             2 May  2 19:15 bit16  
+-rw-r--r--    1 root     root             2 May  2 18:52 bit17  
+-rw-r--r--    1 root     root             2 May  2 18:37 bit18  
+-rw-r--r--    1 root     root             2 May  2 17:53 bit19  
+-rw-r--r--    1 root     root             2 May  2 18:44 bit2  
+-rw-r--r--    1 root     root             2 May  2 19:11 bit3  
+-rw-r--r--    1 root     root             2 May  2 18:59 bit4  
+-rw-r--r--    1 root     root             2 May  2 19:04 bit5  
+-rw-r--r--    1 root     root             2 May  2 19:09 bit6  
+-rw-r--r--    1 root     root             2 May  2 17:54 bit7  
+-rw-r--r--    1 root     root             2 May  2 18:41 bit8  
+-rw-r--r--    1 root     root             2 May  2 18:23 bit9  
+
+Здесь у нас названия файлов не сортированы по дате изменения. Сортируем их по дате и снова выведем.
+
+Для этого используем флаги команды ls -tu (сортировка по времени) -r (в обратном порядке)
+
+Применим готовую команду:  
+```  cat $(ls -tu -r) | tr -d '\n' ```
+
+Наш флаг:
+
+>```FLAG{#p_u_zz_l_e_s#}```
+
+
+
+
+
+
+
+
+
