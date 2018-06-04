@@ -90,3 +90,5 @@ th1s_Is_d1r3cT0ryTR4VeRs4l:x:1000:1000:Linux User,,,:/home/th1s_Is_d1r3cT0ryTR4V
 Легко догадаться, что данное имя пользователя и является флагом
 
 ```flag{th1s_Is_d1r3cT0ryTR4VeRs4l}```
+
+*p.s. Решение таска от команды Red Cadet*
