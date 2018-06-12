@@ -3,8 +3,8 @@
 >Котёнок что-то скрывает.
 (прилагается файл [Cats.docx](https://github.com/axelmaker/vkactf2018_writeup/raw/master/misc/Cats.docx))
 
-Открываем файл ```cats.docx```
-Обнаруживаем текст и изображение. Попробуем сохранить изображение с ```docx``` файла.  
+Открываем файл ```cats.docx```  
+Обнаруживаем текст и изображение. Попробуем сохранить изображение.  
 Открываем его и обнаруживаем флаг
 
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/misc/213213.png?raw=true)
