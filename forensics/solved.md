@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/forensics/cat.jpg?raw=true)
 
-Скачиваем картинку ```cat.jpg```, видем обычного кота.  
+Скачиваем картинку ```cat.jpg```, видим обычного кота.  
 Открываем картинку с помощью ```010 Editor``` (либо через любой hex-редактор)  
 
 Ищем через поиск ключевое слово ```flag```  
