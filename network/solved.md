@@ -22,7 +22,7 @@
 Переходим:  
 ```File > Export Objects > HTTP```  
 Как видно, нам сразу в глаза бросается флаг)  
-![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/network/network2.png?raw=true)  
+![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/network/flag.png?raw=true)  
 >```flag{http_never_die}```
 
 
