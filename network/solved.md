@@ -1,29 +1,33 @@
 Разогрев [Network 10]
 ================
-> А ты умеешь запускать wireshark?
+> А ты умеешь запускать wireshark?  
 Файл: [network1.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network1.pcapng)
 
 Используя ```Wireshark``` открываем дамп.  
 Первым делом смотрим объекты ```HTTP```.  
 Переходим:  
 ```File > Export Objects > HTTP```  
+
 Сохраняем файлы с пакетов, просматриваем их и обнаруживаем флаг  
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/network/123.jpg?raw=true)
+
 
 
 Один за другим  [Network 25]
 ================
 > В этом дампе есть что-то интересное.  
-Возможно тебе пригодится ASCII-таблица
+Возможно тебе пригодится ASCII-таблица  
 Файл: [network2.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network2.pcapng)
 
 Используя ```Wireshark``` открываем дамп.  
 Смотрим объекты ```HTTP```.  
 Переходим:  
 ```File > Export Objects > HTTP```  
+
 Как видно, нам сразу в глаза бросается флаг)  
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/network/network2.png?raw=true)  
 >```flag{http_never_die}```
+
 
 
 Я есть брут [Network 30]
@@ -37,6 +41,7 @@
 Просматриваем их пакеты, и в одном из них находим флаг.  
 
 > ```FLAG{bru73f0rc3_4dm1n}```
+
 
 
 Время жизни [Network 40]
