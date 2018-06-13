@@ -1,7 +1,7 @@
 Разогрев [Network 10]
 ================
 > А ты умеешь запускать wireshark?
-Файл: [network.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network.pcapng))
+Файл: [network.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network.pcapng)
 
 Используя ```Wireshark``` открываем дамп.  
 Первым делом смотрим объекты ```HTTP```.  
@@ -15,7 +15,7 @@
 ================
 > В этом дампе есть что-то интересное.  
 Возможно тебе пригодится ASCII-таблица
-Файл: [network2.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network2.pcapng))
+Файл: [network2.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network2.pcapng)
 
 Используя ```Wireshark``` открываем дамп.  
 Смотрим объекты ```HTTP```.  
@@ -29,7 +29,7 @@
 Я есть брут [Network 30]
 ================
 > О нет! Кто-то брутит мой сайт!  
-Файл: [network3.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network3.pcapng))
+Файл: [network3.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network3.pcapng)
 
 Используя ```Wireshark``` открываем дамп.
 Понимаем, что пытались залогиниться, поэтому смотрим объекты ```HTTP```.  
@@ -41,7 +41,7 @@
 
 Время жизни [Network 40]
 ================
-> Файл: [network4.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network4.pcapng))
+> Файл: [network4.pcapng](https://github.com/axelmaker/vkactf2018_writeup/raw/master/network/network4.pcapng)
 
 Используя ```Wireshark``` открываем дамп.  
 Ставим фильтр на протокол ```ICMP```.  
