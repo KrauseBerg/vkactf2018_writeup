@@ -13,7 +13,47 @@ flag = ????????????????????????
 cipher5 = [39, 63, 37, 33, 28, 1, 69, 27, 42, 0, 5, 56, 24, 91, 22, 52, 25, 88, 1, 27, 24, 91, 70, 8]  
 Расшифруйте флаг  
 
-Пример кода, для решения задания  
+Пример кода, для решения задания на:  
+
+1. python
+
+```python
+
+text1 = 'hello'
+cipher1 = [9, 22, 8, 10, 8, 38, 24, 16, 42, 7, 23, 10, 19, 52, 11, 24, 53, 32, 3, 26, 24, 1, 9, 16]
+text2 = 'weather'
+cipher2 = [11, 4, 12, 2, 56, 14, 16, 8, 1, 1, 19, 21, 41, 24, 10, 10, 25, 24, 23, 5, 6, 4, 11, 20]
+text3 = 'kerbeross'
+cipher3 = [6, 27, 18, 0, 30, 12, 23, 7, 31, 24, 1, 56, 29, 14, 16, 9, 15, 25, 13, 29, 25, 55, 14, 17]
+text4 = 'bye'
+cipher4 = [16, 6, 22, 10, 14, 18, 42, 15, 25, 8, 31, 56, 2, 14, 19, 52, 27, 15, 4, 27, 53, 10, 30, 16]
+cipher5 = [39, 63, 37, 33, 28, 1, 69, 27, 42, 0, 5, 56, 24, 91, 22, 52, 25, 88, 1, 27, 24, 91, 70, 8]
+
+flag = []
+
+j = 0
+for i in range(0, len(text1)):
+	flag.append(cipher1[j] ^ ord(text1[i]))
+	j += 1
+for i in range(0, len(text2)):
+	flag.append(cipher2[j] ^ ord(text2[i]))
+	j += 1
+for i in range(0, len(text3)):
+	flag.append(cipher3[j] ^ ord(text3[i]))
+	j += 1
+for i in range(0, len(text4)):
+	flag.append(cipher4[j] ^ ord(text4[i]))
+	j += 1
+
+answer = ''
+for i in range(0, len(flag)):
+	answer += str(unichr(cipher5[i] ^ flag[i]))
+
+print answer
+
+```
+
+2. c++
 
 ```c++
 #include <iostream>
