@@ -23,10 +23,11 @@
 
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/reverse/reverse003.png?raw=true)
 
-Следовательно введенная с клавиатуры строка не зависит от формирования пароля
+Следовательно введенная с клавиатуры строка не зависит от формирования пароля  
 
+Запускаем `Debugger`. Выбрав `Remote Linux debugger`.  
 
-Ставим точку прерывания  на строчку после выполнения цикла генерации пароля. Выполняем и смотрим значение в v4.  
+Ставим точку прерывания  на строчку после выполнения цикла генерации пароля. Выполняем и смотрим значение в `v4`.  
 
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/reverse/reverse004.png?raw=true)
 
