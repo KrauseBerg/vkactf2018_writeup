@@ -18,7 +18,7 @@
 ![alt text](https://github.com/axelmaker/vkactf2018_writeup/blob/master/reverse/reverse007.png?raw=true)
 
 В функции `strcmp` наблюдаем сравнение строк с `md5`.  
-Расшифреум с помощбю любого Decrypter`a.  
+Расшифруем с помощью любого Decrypter`a.  
 
 `365d38c60c4e98ca5ca6dbc02d396e53 MD5 : password12345`  
 
